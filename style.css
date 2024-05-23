@@ -27,6 +27,8 @@ header{
 .logo{
     font-size: 22px;
     font-weight: 700;
+    color: white;
+    text-decoration: none;
 }
 .nav-bar-list{
 display: flex;
@@ -42,6 +44,8 @@ display: flex;
     margin-left: 50px;
     margin-right: 25px;
     transition: all .5s ease;
+    color: white;
+    text-decoration: none;
 }
 .nav-bar-list li a:hover{
     border-bottom: 2px solid white;
@@ -52,6 +56,7 @@ display: flex;
     font-size: 35px;
     z-index: 101;
     cursor: pointer;
+    text-decoration: none;
 }
 #menu-toggle {
     display: none;
@@ -117,6 +122,8 @@ section{
     border-radius: 30px;
     text-transform: uppercase;
     transition: all 0.5s ease;
+    text-decoration: none;
+    color: white;
 }
 .hero-text a:hover{
     background-color: transparent;
@@ -138,21 +145,30 @@ section{
     top: 50vh;
     padding: 0 2% 0 1%;
     transform: translateY(-50%);
+    text-decoration: none;
+    list-style: none;
 }
 .icons i{
     display: block;
     margin: 15px;
     font-size: 22px;
     transition: all 0.5s ease;
+    text-decoration: none;
+    list-style: none;
 }
 .icons i:hover{
     color: rgb(124, 124, 124);
     transform: translateY(-5px);
 }
+a{
+    text-decoration: none;
+}
 .scroll-down{
     position: absolute;
     bottom: 6%;
     right: 3%;
+    text-decoration: none;
+    list-style: none;
 }
 .scroll-down i{
     display: block;
@@ -161,6 +177,8 @@ section{
     background-color: #103836;
     border-radius: 30px;
     transition: all 0.5s ease;
+    text-decoration: none;
+    list-style: none;
 }
 .scroll-down i:hover{
     transform: translateY(-5px); 
@@ -189,6 +207,7 @@ section{
 .SubTecnologias{
     font-size: 35px;
 }
+
 /*
 Media Queries
 */
