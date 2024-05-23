@@ -10,7 +10,7 @@
   list-style: none;
 }
 body{
-    background-color: black;
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%,#131313 75%);
 }
 header{
     position: fixed;
@@ -62,11 +62,12 @@ display: flex;
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%,#131313 75%);
+    
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+   
+    align-items: end;
     gap: 2rem;
 }
 section{
@@ -94,7 +95,7 @@ section{
 
 }
 .img-hero img{
-    width: 315px;
+    width: 320px;
     border-radius: 100%;
     margin: 10px 0 0 10%;
     height: auto;
@@ -102,7 +103,7 @@ section{
 }
 .img-hero img:hover{
     width: 350px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .hero-text a{
     display: inline-block;
@@ -164,9 +165,41 @@ section{
     transform: translateY(-5px); 
     
 }
+
+.grillaTecnologias{
+    display: grid;
+    grid-column: span 2;
+    grid-template-columns:repeat(9,auto);
+    gap: 0;
+}
+.grillaTecnologias > div{
+    text-align: center  
+}
+.ListaTecnologiasMobile >  li{
+    display: none;
+}
+.SubTecnologias{
+    font-size: 35px;
+}
 /*
 Media Queries
 */
+@media(max-width:1024px){
+    .grillaTecnologias{
+        display: grid;
+        grid-column: span 2;
+        grid-template-columns:repeat(6,auto);
+        gap: 0;
+    }
+    .grillaTecnologias > div{
+        text-align: center  
+    }
+    .ListaTecnologiasMobile >  li{
+        display: none;
+    }
+    
+
+}
 @media(max-width:992px){
     section{
         padding: 0 3%;
@@ -191,6 +224,18 @@ Media Queries
     .icons{
         display: none;
     }
+    .grillaTecnologias{
+        display: grid;
+        grid-column: span 2;
+        grid-template-columns:repeat(5,auto);
+        gap: 0;
+    }
+    .grillaTecnologias > div{
+        text-align: center  
+    }
+    .ListaTecnologiasMobile >  li{
+        display: none;
+    }
 }
 @media(max-width: 768px){
     .menu-icon-action{
@@ -199,6 +244,8 @@ Media Queries
     
     #menu-icon{
         display: block;
+      
+       
     }
    
     .hero-text{
@@ -237,4 +284,26 @@ Media Queries
    #menu-toggle:checked + label.menu-icon-action + nav {
         right: 0;
     }
+    .grillaTecnologias{
+        display: none;
+    }
+    
+    .ListaTecnologiasMobile{
+        display: grid;
+        grid-template-columns: auto auto;
+        
+        justify-self: center;
+        gap: 10px;
+      
+    }
+    .ListaTecnologiasMobile > li{
+        display: block;
+        font-size: 14px;
+        
+    }
+    .SubTecnologias{
+        text-align: center;
+        font-size: 35px;
+    }
+  
 }
