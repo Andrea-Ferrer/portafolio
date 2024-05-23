@@ -66,8 +66,7 @@ display: flex;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
-    align-items: end;
+    align-items: center;
     gap: 2rem;
 }
 section{
@@ -95,7 +94,7 @@ section{
 
 }
 .img-hero img{
-    width: 320px;
+    width: 315px;
     border-radius: 100%;
     margin: 10px 0 0 10%;
     height: auto;
@@ -103,7 +102,7 @@ section{
 }
 .img-hero img:hover{
     width: 350px;
-    opacity: 0.8;
+    opacity: 0.6;
 }
 .hero-text a{
     display: inline-block;
@@ -165,15 +164,22 @@ section{
     transform: translateY(-5px); 
     
 }
-
 .grillaTecnologias{
     display: grid;
     grid-column: span 2;
     grid-template-columns:repeat(9,auto);
     gap: 0;
+    
+}
+.logos{
+    width: 50%;
+    align-self: center;
+    justify-self: center;
 }
 .grillaTecnologias > div{
-    text-align: center  
+    text-align: center;
+
+    display:grid;
 }
 .ListaTecnologiasMobile >  li{
     display: none;
